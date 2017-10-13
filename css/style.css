@@ -60,11 +60,3 @@ section h2 {
   text-align: center;
   background-color: #b7d5d4;
 }
-
-
-/* Grid */
-
-body {
-  display: grid;
-  grid-template: "head head" "aside main" "foot foot";
-}
