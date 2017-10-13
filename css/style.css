@@ -60,3 +60,41 @@ section h2 {
   text-align: center;
   background-color: #b7d5d4;
 }
+
+
+/* Grid */
+
+@media (min-width: 768px) {}
+
+@media  (min-width : 992px) {
+  footer { grid-area: footer}
+  header { grid-area: header}
+  main   { grid-area: main}
+  nav    { grid-area: nav }
+  body {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:
+      "header header"
+      "footer footer"
+      "nav main"
+  }
+}
+
+@media (min-width: 1200px) {
+  footer { grid-area: footer }
+  header { grid-area: header }
+  main { grid-area: main }
+
+  body {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header main"
+      "nav main"
+      "footer main"
+  }
+}
+
+
